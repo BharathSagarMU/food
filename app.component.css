@@ -1,0 +1,57 @@
+
+*{
+    box-sizing: border-box;
+}
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: solid 16px silver;
+    border-top: 16px solid gray;
+    border-radius: 50%;
+    animation: spin 700ms linear infinite;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+.contianer{
+    background-color: rgb(245, 243, 241);
+}
+
+nav{
+    background-color: rgb(187, 185, 185);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 10vh;
+    
+}
+li{
+    margin: 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    align-items: stretch;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+a{
+    color: white;
+}
+
+.child-container{
+    margin: 0px 30px;
+}

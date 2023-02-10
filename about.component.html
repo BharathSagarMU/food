@@ -1,0 +1,25 @@
+<div class="about">
+  <button (click)="goTohome()">go to homePage</button>
+   <h1>About us page </h1>
+   <p>some text about who we are and what we do 
+    resize the browser window to see that this page is responsive by the way
+   </p>
+   <h2>our team</h2>
+   <div class="card-container" >
+     
+     <div class="about-card" *ngFor="let person of persons">
+       <img [src]="person.image"/>
+       <h3>{{person.name}}  </h3>
+       <h4> {{person.designation}} </h4>
+       <p>Bharth is graduated from jntu and he started the 
+        company in the year 2019.and opens in world wide with in the 
+        span of one year
+       </p>
+       <div style="text-align: center;">
+        <button>contact</button>
+       </div>
+       
+     </div>
+     
+   </div>
+</div>
